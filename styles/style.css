@@ -477,6 +477,7 @@
 .f-manu-title{
     font-size: 1.5rem;
     font-weight: bold;
+    color: #FFFFFF;
 }
 .f-title{
     font-weight: 700;
@@ -506,13 +507,14 @@
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 32px;
+    color: #FFFFFF;
 }
 .social-img{
    margin-right:10px;
    cursor: pointer;
 }
 
-
+/* for small device */
 @media screen and (max-width:576px) {
 
     .manu,
@@ -651,5 +653,44 @@
         font-size: 1rem;
         margin-top: 20px;
         padding: 10px 30px;
+    }
+    .footer{
+        height: 100%;
+    }
+    .footer-p{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .footer-s1{
+        margin-top: 65px;
+    }
+    .footer-s2{
+        margin-top: 32px;
+    }
+    .footer-s3{
+        margin-top: 32px;
+    }
+    .social-img{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        width: 33px;
+        height: 33px;
+    }
+    .f-title{
+        font-size: 2.1rem;
+       
+    }
+    .footer-desc{
+        font-size: 1rem;
+        margin-top: 23px;
+    }
+    .btn-f{
+        margin-top: 17px;
+    }
+    .btn-f>a{
+        font-size: 1rem;
+    }
+    .social-title{
+        font-size: 1.3rem;
     }
 }
