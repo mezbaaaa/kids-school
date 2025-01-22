@@ -14,7 +14,8 @@
 
 /* shared styles */
 .navbar,
-.banner {
+.banner,
+.card-p {
     max-width: 1160px;
     margin: 0px auto;
 }
@@ -145,9 +146,135 @@
     width: 100%;
 }
 
+/* curriculum */
+.curriculum {
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
 
+.curriculum-title {
+    color: #000000;
+    font-size: 2.87rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
+}
 
+.card-p {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    margin-top: 80px;
+}
 
+.curriculum-card-b {
+    width: 367.8px;
+    height: 476.78px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    text-align: center;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.curriculum-card-o {
+    width: 367.8px;
+    height: 476.78px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.curriculum-card-p {
+    width: 367.8px;
+    height: 476.78px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    text-align: center;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.curriculum-img {
+    margin-top: 52px;
+}
+
+.card-title {
+    color: rgb(32, 32, 32);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 32px;
+}
+
+.card-desc {
+    color: rgb(128, 128, 128);
+    font-size: .93rem;
+    font-weight: 500;
+    margin-top: 33px;
+    padding: 0 40px;
+}
+
+.card-btn-b {
+    color: rgb(100, 200, 255);
+    font-size: 0.93rem;
+    font-weight: 700;
+    border: none;
+    background: none;
+    margin-top: 38px;
+    cursor: pointer;
+}
+
+.card-btn-o {
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: rgb(240, 170, 0);
+    border: none;
+    background: none;
+    margin-top: 38px;
+    cursor: pointer;
+}
+
+.card-btn-p {
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: rgb(135, 0, 255);
+    border: none;
+    background: none;
+    margin-top: 38px;
+    cursor: pointer;
+}
+
+.arrow-btn {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow>img {
+    width: 35px;
+    height: 35px;
+}
 
 
 
@@ -160,7 +287,8 @@
 
     .manu,
     .nav-title,
-    .nav-btn {
+    .nav-btn,
+    .arrow-btn {
         display: none;
     }
 
@@ -201,7 +329,8 @@
         margin-left: 17px;
         margin-right: 17px;
     }
-    .banner-img{
+
+    .banner-img {
         margin: 20px 10px;
     }
 
@@ -215,15 +344,28 @@
         font-weight: 700;
         margin-top: 0px;
     }
-    .banner-desc{
+
+    .banner-desc {
         font-size: 0.87rem;
         font-weight: 500;
         text-align: center;
         margin-top: 18px;
     }
-    .banner-btn{
-        padding: 12px 24px ;
+
+    .banner-btn {
+        padding: 12px 24px;
         font-size: 1rem;
         margin-top: 18px;
+    }
+
+    .curriculum-title {
+        font-size: 1.6rem;
+        margin-top: 40px;
+    }
+
+    .card-p {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
     }
 }
